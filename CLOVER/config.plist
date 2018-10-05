@@ -617,6 +617,22 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>10.12+-BCM94352-fvco-darkvoid</string>
+				<key>Find</key>
+				<data>
+				gflSqgAAdSk=
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.AirPort.Brcm4360</string>
+				<key>Replace</key>
+				<data>
+				gflSqgAAZpA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
 				<key>Find</key>
 				<data>
