@@ -240,7 +240,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 -cdfon -disablegfxfirmware</string>
+		<string>nv_disable=1 dart=0 -cdfon -disablegfxfirmware alcid=3</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
