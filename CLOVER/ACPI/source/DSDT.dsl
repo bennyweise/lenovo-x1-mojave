@@ -3403,6 +3403,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
             {
                 Name (_ADR, 0x00160000)
             }
+            
         }
     }
 
@@ -4650,6 +4651,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                     "compatible", "pci8086,9cc1",
                 })
             }
+            
         }
 
         Device (PPMC)
@@ -6232,6 +6234,8 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                     }
                 }
             }
+            
+            
         }
 
         Device (RP01)
@@ -18129,6 +18133,8 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
                 }
                 Return(TEMP)
             }
+            
+            
         }
 
         Device (FWHD)
@@ -18159,6 +18165,10 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
 
             
 
+            
+            
+            
+            
             
             Name (_STA, 0x0F)
             Method (_CRS, 0, NotSerialized)
@@ -19226,6 +19236,7 @@ DefinitionBlock ("", "DSDT", 2, "LENOVO", "SKL     ", 0x00000000)
     Method (_WAK, 1, Serialized)  // _WAK: Wake
     {
         If (LOr(LLess(Arg0,1),LGreater(Arg0,5))) { Store(3,Arg0) }
+If (LOr(LLess(Arg0,1),LGreater(Arg0,5))) { Store(3,Arg0) }
 D8XH (0x01, 0xAB)
         ADBG ("_WAK")
         \_SB.PCI0.GEXP.INVC ()
@@ -19891,7 +19902,7 @@ D8XH (0x01, 0xAB)
                     Store (0x07DD, OSYS)
                 }
 
-                If (\_OSI ("Windows 2015"))
+                If(LOr(_OSI("Darwin"),_OSI("Windows 2015")))
                 {
                     Store (0x01, \WIN8)
                     Store (0x07DF, OSYS)
@@ -30273,6 +30284,8 @@ D8XH (0x01, 0xAB)
             }
         }
     }
+    
+    
     Method (B1B2, 2, NotSerialized) { Return(Or(Arg0, ShiftLeft(Arg1, 8))) }
     Method (B1B4, 4, NotSerialized)
     {
