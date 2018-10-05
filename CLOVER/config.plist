@@ -642,6 +642,20 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>Patching 11d4198b with 14f12008 codec (patched by AppleHDA Patcher.app)</string>
+				<key>Find</key>
+				<data>
+				ixnUEQ==
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				CCDxFA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>10.12+-BCM94352-fvco-darkvoid</string>
 				<key>Disabled</key>
 				<false/>
