@@ -240,7 +240,7 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>nv_disable=1 dart=0 -cdfon -disablegfxfirmware alcid=3</string>
+		<string>nv_disable=1 dart=0 -cdfon -disablegfxfirmware</string>
 		<key>NeverHibernate</key>
 		<true/>
 		<key>Secure</key>
@@ -367,6 +367,8 @@
 		<dict>
 			<key>Inject</key>
 			<integer>0</integer>
+			<key>ResetHDA</key>
+			<true/>
 		</dict>
 		<key>FakeID</key>
 		<dict>
@@ -385,8 +387,8 @@
 				<string>0x591b0000, 0105 instead of 0306, HDMI</string>
 				<key>#1 framebuffer-con1-alldata</key>
 				<data>
-				AQUKAAAIAACHAQAAAgQKAAAAgAAIcBAAD/AAAAAQAAAA
-				IAAAAA==
+				AQUKAAAIAACHAQAAAgQKAAAAAACAAAhwEAAP8AAAABAA
+				AAAAACAAAAA=
 				</data>
 				<key>#1 framebuffer-con1-enable</key>
 				<integer>1</integer>
@@ -394,15 +396,15 @@
 				<string>0x591b0000, 0105 instead of 0204, HDMI</string>
 				<key>#2 framebuffer-con1-alldata</key>
 				<data>
-				AQUKAAAIAACHAQAAAwYKAAAAQAAIcBAAD/AAAAAQAAAA
-				IAAAAA==
+				AQUKAAAIAACHAQAAAwYKAAAAAABAAAhwEAAP8AAAABAA
+				AAAAACAAAAA=
 				</data>
 				<key>#2 framebuffer-con1-enable</key>
 				<integer>1</integer>
 				<key>#3 framebuffer-con1-alldata</key>
 				<data>
-				/wAAAAEAAAAgAAAA/wAAAAAQAAACAAAAD/AAAAAQAAAA
-				IAAAAA==
+				/wAAAAEAAAAgAAAA/wAAAAAAABAAAAIAAAAP8AAAABAA
+				AAAAACAAAAA=
 				</data>
 				<key>#3 framebuffer-con1-enable</key>
 				<integer>1</integer>
@@ -648,7 +650,7 @@
 				ixnUEQ==
 				</data>
 				<key>Name</key>
-				<string>AppleHDA</string>
+				<string>com.apple.driver.AppleHDA</string>
 				<key>Replace</key>
 				<data>
 				CCDxFA==
